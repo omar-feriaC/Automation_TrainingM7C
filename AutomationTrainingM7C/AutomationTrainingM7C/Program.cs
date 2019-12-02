@@ -13,9 +13,9 @@ namespace AutomationTrainingM7C
     {
         static void Main(string[] args)
         {
-            IWebDriver driver = new ChromeDriver();
-            string url = ConfigurationManager.AppSettings.Get("url");
-            driver.Url = url;
+            //IWebDriver driver = new ChromeDriver();
+            //string url = ConfigurationManager.AppSettings.Get("url");
+            //driver.Url = url;
 
         }
     }

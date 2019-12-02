@@ -6,15 +6,28 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Configuration;
+using NUnit.Framework;
 
 namespace AutomationTrainingM7C.Base_Files
 {
     class BaseTest
     {
-        public IWebDriver driver = new ChromeDriver();
+        public static IWebDriver driver;
 
-        public string url = ConfigurationManager.AppSettings.Get("url");
+        public static string strBrowserUrl = ConfigurationManager.AppSettings.Get("url");
 
-        
+        [SetUp]
+        public static void SetUp()
+        {
+            driver = new ChromeDriver();
+            driver.Url = strBrowserUrl;
+        }
+
+        [TearDown]
+        public static void AfterTest()
+        {
+            //driver.Close();
+            //driver.Quit();
+        }
     }
 }
