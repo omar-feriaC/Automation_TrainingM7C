@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutomationTrainingM7C.Base_Files;
+using AutomationTrainingM7C.Page_Objects;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using System.Configuration;
@@ -23,6 +24,9 @@ namespace AutomationTrainingM7C.Test_Cases
 
             IWebElement loginBtn = driver.FindElement(By.Name("login"));
             loginBtn.Click();
+
+            LoginPage pgLogin = new LoginPage(driver);
+            
         }
     }
 }
