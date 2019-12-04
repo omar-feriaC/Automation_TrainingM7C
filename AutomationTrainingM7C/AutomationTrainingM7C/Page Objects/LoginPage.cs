@@ -27,7 +27,39 @@ namespace AutomationTrainingM7C.Page_Objects
 
         /*PAGE ELEMENT OBJECTS*/
         private static IWebElement objUserNameInput => _objDriver.FindElement(By.Name(STR_USERNAME_TEXTFIELD));
+        private static IWebElement objPasswordInput => _objDriver.FindElement(By.Name(STR_PASSWORD_TEXTFIELD));
+        private static IWebElement objLoginButton => _objDriver.FindElement(By.XPath(STR_LOGIN_BUTTON));
 
+        /*GET ELEMENT METHODS*/
+        public IWebElement GetUserNameField()
+        {
+            return objUserNameInput;
+        }
+        public IWebElement GetPasswordField()
+        {
+            return objPasswordInput;
+        }
+        public IWebElement GetLoginButton()
+        {
+            return objLoginButton;
+        }
 
+        /*PAGE ACTIONS*/
+        public void fnEnterUserName(string pstrUserName)
+        {
+            objUserNameInput.Clear();
+            objUserNameInput.SendKeys(pstrUserName);
+        }
+
+        public void fnEnterPassword(string pstrPassword)
+        {
+            objPasswordInput.Clear();
+            objPasswordInput.SendKeys(pstrPassword);
+        }
+
+        public void fnClickLogin()
+        {
+            objLoginButton.Click();
+        }
     }
 }

@@ -16,17 +16,23 @@ namespace AutomationTrainingM7C.Test_Cases
         [Test]
         public void fnLogin()
         {
-            IWebElement username = driver.FindElement(By.Name("userName"));
-            username.SendKeys(ConfigurationManager.AppSettings.Get("user"));
+            //IWebElement username = driver.FindElement(By.Name("userName"));
+            //username.SendKeys(ConfigurationManager.AppSettings.Get("user"));
 
-            IWebElement password = driver.FindElement(By.Name("password"));
-            password.SendKeys(ConfigurationManager.AppSettings.Get("password"));
+            //IWebElement password = driver.FindElement(By.Name("password"));
+            //password.SendKeys(ConfigurationManager.AppSettings.Get("password"));
 
-            IWebElement loginBtn = driver.FindElement(By.Name("login"));
-            loginBtn.Click();
+            //IWebElement loginBtn = driver.FindElement(By.Name("login"));
+            //loginBtn.Click();
 
             LoginPage pgLogin = new LoginPage(driver);
-            
+
+            pgLogin.fnEnterUserName(ConfigurationManager.AppSettings.Get("user"));
+            pgLogin.fnEnterPassword(ConfigurationManager.AppSettings.Get("password"));
+            pgLogin.fnClickLogin();
+            Assert.AreEqual("Sign-on: Mercury Tours", driver.Title);
+
+            //IWebElement objUserNameTextField = pgLogin.GetUserNameField();
         }
     }
 }
