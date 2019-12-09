@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace AutomationTrainingM7C.M7Exercise.NugetPkg
 {
+    
     interface IShape
     {
+        void DisplayInfo(string strName);
+
     }
+
+   
+
+
 }
