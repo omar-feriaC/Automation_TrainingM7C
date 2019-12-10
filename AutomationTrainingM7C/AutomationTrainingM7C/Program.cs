@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Configuration;
+using AutomationTrainingM7C.Jose_Cruz_M7_Exercise;
 
 namespace AutomationTrainingM7C
 {
@@ -13,7 +14,12 @@ namespace AutomationTrainingM7C
     {
         static void Main(string[] args)
         {
-            Console.ReadKey();
+            Trapezium trapezium = new Trapezium();
+            trapezium.fnCalcArea();
+            trapezium.fnCalcPerimeter();
+            trapezium.fnCalcVolume();
+            trapezium.fnDisplayInfo();
+            trapezium.fnDisplayInfo3D();
         }
     }
 }
