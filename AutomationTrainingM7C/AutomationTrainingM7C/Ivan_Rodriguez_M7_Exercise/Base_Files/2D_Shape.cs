@@ -11,9 +11,13 @@ namespace AutomationTrainingM7C.Ivan_Rodriguez_M7_Exercise
     {
         public double Area { get; set; }
         public double Perimeter { get; set; }
-        public string Name { get; set; }
-        public double Volume { get; set; }
-
+        public string StrName { get; set; }
+        public _2D_Shape()
+        {
+            Area = 0;
+            Perimeter = 0;
+            StrName = null;
+        }
         public void DisplayInfo()
         {
         }

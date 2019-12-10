@@ -13,11 +13,17 @@ namespace AutomationTrainingM7C.Base_Files
 {
     public class _3D_Shape : _2D_Shape
     {
-        new public double Area { get; set; }
+        new public double Area { get; set ; }
         new public double Perimeter { get; set; }
-        new public string Name { get; set; }
-        new public double Volume { get; set; }
+        new public string StrName { get; set; }
+        public double Volume { get; set; }
 
+        public _3D_Shape()
+        {
+            Area = 0;
+            Volume = 0;
+            StrName = null;
+        }
         new public void DisplayInfo()
         {
         }

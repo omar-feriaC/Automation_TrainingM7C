@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using System.Configuration;
+using AutomationTrainingM7C.Ivan_Rodriguez_M7_Exercise;
+using AutomationTrainingM7C.Ivan_Rodriguez_M7_Exercise.Base_Files;
 
 namespace AutomationTrainingM7C
 {
@@ -13,7 +13,7 @@ namespace AutomationTrainingM7C
     {
         static void Main(string[] args)
         {
-            Console.ReadKey();
+
         }
     }
 }
