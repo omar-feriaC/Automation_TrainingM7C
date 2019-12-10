@@ -14,6 +14,11 @@ namespace AutomationTrainingM7C
         static void Main(string[] args)
         {
             Console.ReadKey();
+            Shape3D poligon = new Shape3D();
+            Shape2D figure = new Shape2D();
+            Pentagon object2 = new Pentagon();
+            Cone object1 = new Cone();
+
         }
     }
 }
