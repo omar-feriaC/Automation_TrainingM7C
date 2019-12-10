@@ -15,11 +15,18 @@ namespace AutomationTrainingM7C
         static void Main(string[] args)
         {
             Trapezium trapezium = new Trapezium();
+            Trapezium trapezium1 = new Trapezium("ParamTrapezium",100, 200, 300, 400, 150, 120);
             trapezium.fnCalcArea();
             trapezium.fnCalcPerimeter();
             trapezium.fnCalcVolume();
             trapezium.fnDisplayInfo();
             trapezium.fnDisplayInfo3D();
+            trapezium1.fnCalcArea();
+            trapezium1.fnCalcPerimeter();
+            trapezium1.fnCalcVolume();
+            trapezium1.fnDisplayInfo();
+            trapezium1.fnDisplayInfo3D();
+            Console.ReadKey();
         }
     }
 }

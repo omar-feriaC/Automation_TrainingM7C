@@ -17,7 +17,8 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
             Console.WriteLine("Area: " + dblArea);
             Console.WriteLine("Perimeter: " + dblPerimeter);
             Console.WriteLine("Volume: " + dblVolume);
-            Console.ReadKey();
+            Console.WriteLine("");
+            //Console.ReadKey();
         }
 
         public Shape3D()

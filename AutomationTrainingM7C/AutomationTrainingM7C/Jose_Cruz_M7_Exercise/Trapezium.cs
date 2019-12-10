@@ -25,14 +25,14 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
             strName = "Trapezium";
         }
 
-        public Trapezium(double dblA1, double dblB1, double dblC1, double dblD1, double dblH1, double dblW1) {
+        public Trapezium(string strNameT, double dblA1, double dblB1, double dblC1, double dblD1, double dblH1, double dblW1) {
             dblA = dblA1;
             dblB = dblB1;
             dblC = dblC1;
             dblD = dblD1;
             dblH = dblH1;
             dblW = dblW1;
-            strName = "Trapezium";
+            strName = strNameT;
         }
 
         public double fnCalcArea()

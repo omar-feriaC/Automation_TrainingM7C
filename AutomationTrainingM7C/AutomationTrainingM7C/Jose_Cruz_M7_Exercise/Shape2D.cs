@@ -21,6 +21,7 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Execise
             Console.WriteLine("Name: " + strName);
             Console.WriteLine("Area: " + dblArea);
             Console.WriteLine("Perimeter: " + dblPerimeter);
+            Console.WriteLine("");
             //Console.ReadKey();
         }
 
