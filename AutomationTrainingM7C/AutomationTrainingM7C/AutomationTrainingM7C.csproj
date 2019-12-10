@@ -55,8 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base Files\2D_Shape.cs" />
-    <Compile Include="Base Files\3D_Shape.cs" />
+    <Compile Include="Ivan_Rodriguez_M7_Exercise\Base_Files\2D_Shape.cs" />
+    <Compile Include="Ivan_Rodriguez_M7_Exercise\Base_Files\3D_Shape.cs" />
     <Compile Include="Base Files\BaseTest.cs" />
     <Compile Include="Ivan_Rodriguez_M7_Exercise\IShape.cs" />
     <Compile Include="Page Objects\LoginPage.cs" />

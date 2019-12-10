@@ -7,19 +7,19 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Configuration;
 using NUnit.Framework;
+using AutomationTrainingM7C.Ivan_Rodriguez_M7_Exercise;
 
 namespace AutomationTrainingM7C.Base_Files
 {
-    class _3D_Shape: _2D_Shape
+    public class _3D_Shape : _2D_Shape
     {
-        public static double Volume;
+        new public double Area { get; set; }
+        new public double Perimeter { get; set; }
+        new public string Name { get; set; }
+        new public double Volume { get; set; }
 
         new public void DisplayInfo()
         {
-            _3D_Shape.Name = "";
-            _3D_Shape.BaseArea = 0;
-            _3D_Shape.Perimeter = 0;
-            _3D_Shape.Volume = 0;
         }
     }
 }
