@@ -6,37 +6,51 @@ using System.Threading.Tasks;
 
 namespace AutomationTrainingM7C.Base_Files
 {
-    class Cylinder : 3D_Shape
+    class Cylinder : 3D_Shapes
     {
-    
-        public void Area()
-    { 
 
-            double pi=3.1416;
-            double radio=5;
+        private double pi1;
+        private double radio1;
+        private double high1;
 
-            ACylinder = pi * (5 * 5);
-            Console.WriteLine("Area = " +ACylinder)
+        private double pi2;
+        private double radio2;
+        private double high2;
+        
+        private double pi3;
+        private double radio3;
+        private double high3;
+
+        public override Area(double pi1, double radio1, double high1)
+        { 
+
+            double pi1=3.1416;
+            double radio1=5;
+            double high1 = 10;
+
+            double ACylinder = pi1 * (radio1 * radio1);
+            Console.WriteLine("Area = " + ACylinder);
+        }
+
+
+        public override void Perimeter(double radio2, double pi2)
+        {
+            double radio2 = 3;
+            double pi2 = 3.1416;
+
+            double PCylinder = radio2 * (2 * pi2);
+            Console.WriteLine("Perimeter = " + PCylinder);
+        }
+
+        public void Volume(double pi3, double radio3, double high3)
+        {
+            double pi3 = 3.1416;
+            double radio3 = 5;
+            double high3 = 10;
+
+            double VCylinder = pi3 * (radio3 * radio3) * high3;
+            Console.WriteLine("Volume = " + VCylinder);
+        }
+
     }
-
-        public void Perimeter()
-        {
-            double radio = 3;
-            double pi = 3.1416;
-
-            PCylinder = radio * (2 * pi);
-            Console.WriteLine("Perimeter = " + PCylinder)
-        }
-
-        public void Volume()
-        {
-            double pi = 3.1416;
-            double radio = 5;
-            double high = 10;
-
-            VCylinder = pi * (5 * 5) * high;
-            Console.WriteLine("Volume = " + VCylinder)
-        }
-
-}
 }

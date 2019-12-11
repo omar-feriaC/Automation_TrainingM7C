@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace AutomationTrainingM7C.Base_Files
 {
-    class 2D_Shape
+    class 3D_Shapes
     {
-        string name = undefined;
+        string Name = undefined;
+        double Base = 0;
         double Area = 0;
         double Perimeter = 0;
-    }
-
-    
     }
 }

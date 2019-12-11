@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace AutomationTrainingM7C.Base_Files
 {
-    class 2D_Shape
+    class IShape
     {
-        string name = undefined;
-        double Area = 0;
-        double Perimeter = 0;
-    }
-
-    
+        public abstract override string ToString();
     }
 }

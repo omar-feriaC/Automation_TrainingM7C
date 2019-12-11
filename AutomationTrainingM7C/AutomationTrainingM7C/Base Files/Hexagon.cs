@@ -6,24 +6,30 @@ using System.Threading.Tasks;
 
 namespace AutomationTrainingM7C.Base_Files
 {
-    class Hexagon : 2D_Shape
+
+    class Hexagon : IShape
     {
-        public Area()
+
+        double perihexa;
+        double apo;
+        public override void Area(double perihexa,double apo)
         {
 
             double perihexa = 5;
             double apo = 3;
 
-            AHexagon = (perihexa * apo) / 2;
-            Console.WriteLine("Area = " + AHexagon)
-    }
+            double AHexagon = (perihexa * apo) / 2;
+            Console.WriteLine("Area = " + AHexagon);
+        }
 
-        public void Perimeter()
+        double length;
+        public override void Perimeter(double length)
         {
             double length = 1;
-            
-            PHexagon = length * 6;
-            Console.WriteLine("Perimeter = " + PHexagon)
+
+            double PHexagon = length * 6;
+            Console.WriteLine("Perimeter = " + PHexagon);
         }
+        
     }
 }
