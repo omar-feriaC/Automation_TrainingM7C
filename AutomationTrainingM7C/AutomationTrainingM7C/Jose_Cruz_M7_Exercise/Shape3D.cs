@@ -14,11 +14,10 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
         public void fnDisplayInfo3D()
         {
             Console.WriteLine("Name: "+strName);
-            Console.WriteLine("Area: " + dblArea);
-            Console.WriteLine("Perimeter: " + dblPerimeter);
+            //Console.WriteLine("Area: " + dblArea);
+            //Console.WriteLine("Perimeter: " + dblPerimeter);
             Console.WriteLine("Volume: " + dblVolume);
             Console.WriteLine("");
-            //Console.ReadKey();
         }
 
         public Shape3D()
