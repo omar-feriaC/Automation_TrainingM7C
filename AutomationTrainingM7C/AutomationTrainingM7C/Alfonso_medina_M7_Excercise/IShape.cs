@@ -8,6 +8,8 @@ namespace AutomationTrainingM7C.Alfonso_medina_M7_Excercise
 {
     interface IShape
     {
+        string Name { get; set; }
+    
         void DisplayInfo();    
 
     }

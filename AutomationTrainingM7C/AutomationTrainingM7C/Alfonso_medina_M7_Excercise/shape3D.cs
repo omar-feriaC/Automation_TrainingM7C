@@ -12,17 +12,19 @@ namespace AutomationTrainingM7C.Alfonso_medina_M7_Excercise
 
         public Shape3D()
         {
-            String name = "Undefined";
-            Shape3D poligon = new Shape3D();
-            poligon.Volume = 0;
+            Name = null;
+            Area = 0;
+            Perimeter = 0;
+            Volume = 0;
 
         }
 
-        public void DisplayInfo()
+        public new void DisplayInfo()
         {
-            Console.WriteLine(this.Area);
-            Console.WriteLine(this.Perimeter);
-            Console.WriteLine(this.Volume);
+            Console.WriteLine(Name);
+            Console.WriteLine(Area);
+            Console.WriteLine(Perimeter);
+            Console.WriteLine(Volume);
          
         }
     }

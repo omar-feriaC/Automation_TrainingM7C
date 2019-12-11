@@ -7,7 +7,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Configuration;
 
-namespace AutomationTrainingM7C
+namespace AutomationTrainingM7C.Alfonso_medina_M7_Excercise
 {
     class Program
     {

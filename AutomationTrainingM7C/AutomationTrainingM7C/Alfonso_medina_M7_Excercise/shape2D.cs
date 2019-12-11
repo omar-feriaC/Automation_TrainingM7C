@@ -11,25 +11,24 @@ namespace AutomationTrainingM7C.Alfonso_medina_M7_Excercise
 
 		protected double Area { get; set; }
         protected double Perimeter { get; set; }
+        public string Name { get; set; }
 
 
         public Shape2D()
 		{
-			String name = "Undefined";
-            Shape2D figure = new Shape2D();
-            figure.Area = 0;
-            figure.Perimeter = 0;
+            Name = null;
+            Area = 0;
+            Perimeter = 0;
 			
 		}
 		
 		public void DisplayInfo ()
         {
-            Console.WriteLine(this.Area);
-            Console.WriteLine(this.Perimeter);
+            Console.WriteLine(Name);
+            Console.WriteLine(Area);
+            Console.WriteLine(Perimeter);
 
         }
-
-
 		
     }
 }
