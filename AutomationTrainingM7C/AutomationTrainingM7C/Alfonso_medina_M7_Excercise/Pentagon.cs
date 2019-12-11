@@ -9,21 +9,27 @@ namespace AutomationTrainingM7C.Alfonso_medina_M7_Excercise
     class Pentagon : Shape2D
     {
         public Pentagon()
-        {
+        {            
             
-            Pentagon object2 = new Pentagon();
-            object2.Name = "Pentagon";
-            object2.Area = 0;
-            object2.Perimeter = 0;
+            Name = "Pentagon";
+            Area = 0;
+            Perimeter = 0;
 
         }
 
         public Pentagon(double valueA, double valueP)
         {            
-            Pentagon object2 = new Pentagon();
-            object2.Name = "Cone";
-            object2.Area = valueA;
-            object2.Perimeter = valueP;
+            
+            Name = "Cone";
+            Area = valueA;
+            Perimeter = valueP;
+
+        }
+
+        public double CalculateArea(double apotema)
+        {
+            return (Perimeter * apotema)/2;
+
 
         }
 
