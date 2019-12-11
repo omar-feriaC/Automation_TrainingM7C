@@ -8,7 +8,10 @@ namespace AutomationTraining_M7.Jose_Pasos_M7_Excercise
 {
     interface IShape
     {
-        double Area();
-        double Perimeter();
+        string Name{get; set;}
+
+        void DisplayInfo();
+
+
     }
 }

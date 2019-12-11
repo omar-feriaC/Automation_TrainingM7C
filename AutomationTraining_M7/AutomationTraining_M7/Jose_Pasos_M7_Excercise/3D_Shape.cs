@@ -8,7 +8,8 @@ namespace AutomationTraining_M7.Jose_Pasos_M7_Excercise
 {
     class _3D_Shape : _2D_Shape
     {
-        double Volume;
+        public double Volume;
+        
         public new void DisplayInfo()
         {
 
@@ -17,8 +18,8 @@ namespace AutomationTraining_M7.Jose_Pasos_M7_Excercise
         public _3D_Shape()
         {
             Name = "undefined";
-            Area = "0";
-            Perimeter = "0";
+            Area = 0;
+            Perimeter = 0;
             Volume = 0;
         }
         

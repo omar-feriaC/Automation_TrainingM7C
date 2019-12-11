@@ -9,7 +9,11 @@ namespace AutomationTraining_M7.Jose_Pasos_M7_Excercise
 {
     class _2D_Shape : IShape
     {
-        public string Name;
+        public double Area;
+        public double Perimeter;
+
+        public string Name { get; set; }
+
         public void DisplayInfo()
         {
             
@@ -18,8 +22,8 @@ namespace AutomationTraining_M7.Jose_Pasos_M7_Excercise
         public _2D_Shape ()
         {
             Name = "undefined";
-            Area = "0";
-            Perimeter = "0";
+            Area = 0;
+            Perimeter = 0;
         }
 
             

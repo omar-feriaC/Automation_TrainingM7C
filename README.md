@@ -1,2 +1,2 @@
-# Automation_TrainingM7C
-Automation Training M7C
+# Automation_TrainingM7
+Automation Framework
