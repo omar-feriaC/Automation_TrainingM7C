@@ -41,10 +41,11 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
             return dblArea;
 
         }
-        public double fnCalcArea(double dblA, double dblB, double dblH) {
-            dblArea = (dblH * ((dblA + dblB) / 2));
+        public double fnCalcArea(double dblA2, double dblB2, double dblH2)
+        {
+            dblArea = (dblH2 * ((dblA2 + dblB2) / 2));
             return dblArea;
-            
+
         }
 
         public double fnCalcPerimeter()
@@ -52,8 +53,9 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
             dblPerimeter = dblA + dblB + dblC + dblD;
             return dblPerimeter;
         }
-        public double fnCalcPerimeter(double dblA, double dblB, double dblC, double dblD) {
-            dblPerimeter = dblA + dblB + dblC + dblD;
+        public double fnCalcPerimeter(double dblA3, double dblB3, double dblC3, double dblD3)
+        {
+            dblPerimeter = dblA3 + dblB3 + dblC3 + dblD3;
             return dblPerimeter;
         }
 
@@ -62,8 +64,9 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
             dblVolume = dblArea * dblW;
             return dblVolume;
         }
-        public double fnCalcVolume(double dblW) {
-            dblVolume = dblArea * dblW;
+        public double fnCalcVolume(double dblW4)
+        {
+            dblVolume = dblArea * dblW4;
             return dblVolume;
         }
     }

@@ -24,13 +24,13 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
             strName = "Ellipsoid";
         }
 
-        public Ellipsoid(string strNameT, double dblMajorRadius1, double dblMinorRadius1, double dblMayorDiameter1, double dblMinorDiameter1, double dblEllipsoidSideWidth1/*, double dblEllipsoidSideW1*/)
+        public Ellipsoid(string strNameT, double dblMajorRadius0, double dblMinorRadius0, double dblMayorDiameter0, double dblMinorDiameter0, double dblEllipsoidSideWidth0)
         {
-            dblMajorRadius = dblMajorRadius1;
-            dblMinorRadius = dblMinorRadius1;
-            dblMayorDiameter = dblMayorDiameter1;
-            dblMinorDiameter = dblMinorDiameter1;
-            dblEllipsoidSideWidth = dblEllipsoidSideWidth1;
+            dblMajorRadius = dblMajorRadius0;
+            dblMinorRadius = dblMinorRadius0;
+            dblMayorDiameter = dblMayorDiameter0;
+            dblMinorDiameter = dblMinorDiameter0;
+            dblEllipsoidSideWidth = dblEllipsoidSideWidth0;
             strName = strNameT;
         }
 
@@ -42,7 +42,7 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
         }
         public double fnCalcArea(double dblMajorRadius1, double dblMinorRadius1)
         {
-            dblArea = (dblMajorRadius * dblMinorRadius * dblPi);
+            dblArea = (dblMajorRadius1 * dblMinorRadius1 * dblPi);
             return dblArea;
 
         }
@@ -52,9 +52,9 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
             dblPerimeter = (2*dblPi)*( Math.Sqrt((dblMinorRadius*dblMinorRadius)+(dblMajorRadius*dblMajorRadius)/2)) ;
             return dblPerimeter;
         }
-        public double fnCalcPerimeter(double dblMajorRadius, double dblMinorRadius)
+        public double fnCalcPerimeter(double dblMajorRadius2, double dblMinorRadius2)
         {
-            dblPerimeter = (2 * dblPi) * (Math.Sqrt((dblMinorRadius * dblMinorRadius) + (dblMajorRadius * dblMajorRadius) / 2));
+            dblPerimeter = (2 * dblPi) * (Math.Sqrt((dblMinorRadius2 * dblMinorRadius2) + (dblMajorRadius2 * dblMajorRadius2) / 2));
             return dblPerimeter;
         }
 
@@ -63,9 +63,9 @@ namespace AutomationTrainingM7C.Jose_Cruz_M7_Exercise
             dblVolume = (((4 * dblPi) / 3) * dblMayorDiameter * dblMinorDiameter * dblEllipsoidSideWidth);
             return dblVolume;
         }
-        public double fnCalcVolume(double dblMayorDiameter, double dblMinorDiameter, double dblEllipsoidSideWidth)
+        public double fnCalcVolume(double dblMayorDiameter3, double dblMinorDiameter3, double dblEllipsoidSideWidth3)
         {
-            dblVolume = (((4 * dblPi) / 3) * dblMayorDiameter * dblMinorDiameter * dblEllipsoidSideWidth);
+            dblVolume = (((4 * dblPi) / 3) * dblMayorDiameter3 * dblMinorDiameter3 * dblEllipsoidSideWidth3);
             return dblVolume;
         }
 
